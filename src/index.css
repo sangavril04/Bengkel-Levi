@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #0f172a;
+    --color-text: #f8fafc;
+    --color-accent: #0284c7;
+    --color-accent-dark: #0369a1;
+    --color-border: #1e293b;
+    --color-card: #1e293b;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-cyan-600 hover:bg-cyan-700 text-white;
+  }
+
+  .btn-secondary {
+    @apply border border-cyan-400 hover:bg-cyan-900 text-cyan-400;
+  }
+}
